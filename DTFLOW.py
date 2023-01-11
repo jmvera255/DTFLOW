@@ -573,7 +573,7 @@ class DTFLOW():
         """  
         Y = self.Y
         d = Y.shape[1] 
-        print(size)
+        #print(size)
 
         fig = plt.figure(figsize=size)
 
@@ -661,7 +661,8 @@ class DTFLOW():
                 ax.set_zlabel('D'+str(dims[2]),fontsize=15,fontweight='bold')
                 ax.legend(markers, color_dict.keys(), loc=2, numpoints=3)               
         
-        plt.show()
+        #plt.show()
+        return fig
 
 if __name__ == "__main__":
     pass
