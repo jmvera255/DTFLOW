@@ -41,7 +41,7 @@ z = DTFLOW(raw_df,time_stages)
 M= z.get_transition_matrix(10)
 S = z.get_diffusionRWR(p=0.9)
 Y = z.get_Y(slover='svd',dim=2)
-
+np.savetxt("guo2010_dtflow_Y.csv", Y, delimiter=',')
 
 # In[5]:
 
